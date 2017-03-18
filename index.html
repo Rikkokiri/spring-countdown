@@ -21,12 +21,13 @@
     function init(){
 
       // Set a valid end date for the counter
-      var countdownEnd = 'Sat Mar 4 2017 16:50:00 GMT-0600';
+      //var countdownEnd = 'Sat Mar 4 2017 16:50:00 GMT-0600';
+      var countdownEnd = 'Jun 6 2017 20:00:00 GMT-0500';
 
-      var contentChange = 'Sat Mar 4 2017 24:00:00';
-      var timeLeft = calculateRemainingTime(contentChange);
-      var days = timeLeft.weeks * 7 + timeLeft.days - 2;
-      setContent(days);
+      //var contentChange = 'Jun 6 2017 24:00:00';
+      //var timeLeft = calculateRemainingTime(contentChange);
+      //var days = timeLeft.weeks * 7 + timeLeft.days - 2;
+      setContent();
 
       //Call startCountdown providing it the end time and the id values of elements used for displaying the weeks, days, hours, minutes and seconds
       startCountdown(countdownEnd, "countdown-div", "countdown-weeks", "countdown-days", "countdown-hours", "countdown-minutes", "countdown-seconds");
