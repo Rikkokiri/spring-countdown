@@ -1,0 +1,82 @@
+/*
+* @author Pilvi Rajala (piraj)
+*/
+
+html, body {
+  /*padding: 0;
+  margin: 0;*/
+  height: 100%;
+  overflow: auto;  /* Prevent "white bounce" */
+  color: white;
+}
+
+#quote {
+  width: 100%;
+  position: absolute;
+  top: 15%;
+  -webkit-transform: translateY(-15%);
+  -moz-transform: translateY(-15%);
+  transform: translateY(-15%);
+
+  text-align: center;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+  font-weight: bolder;
+
+  text-shadow: 0px 0px 10px #313131;
+}
+
+
+/* The countdown timer */
+#countdown-div {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+}
+
+.countdown-item {
+  text-align: center;
+
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  margin: 8px;
+
+  color: white;
+  border-radius: 50%;
+  font-family: 'Amatic SC', cursive;
+
+}
+
+#bg {
+  background-image: url('/resources/powerlines2.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  overflow: hidden;  /* Prevent "white bounce" */
+}
+
+.countdown-number { /* Span where countdown numbers are placed */
+  display: inline-block;
+  line-height: 60px;
+  padding-top: 25px;
+  font-size: 50px;
+  text-align: center;
+  font-weight: bolder;
+
+}
+
+.time-unit {
+  font-size: 25px;
+}
+
+#olympic-results {
+  font-size: 20px;
+}
